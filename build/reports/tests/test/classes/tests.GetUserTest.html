@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.GetUserTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.GetUserTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; GetUserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.041s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="GetUserWithInvalidUserId"></a>
+<h3 class="failures">GetUserWithInvalidUserId</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;401&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at tests.helpers.ApiBase.getRequestWithParam(ApiBase.java:54)
+	at tests.GetUserTest.GetUserWithInvalidUserId(GetUserTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">GetUser</td>
+<td class="success">1.984s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">GetUserWithInvalidUserId</td>
+<td class="failures">1.643s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">GetUserWithoutToken</td>
+<td class="success">1.414s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:06:02.962 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53275&lt;-&gt;176.58.101.124:443 closed
+14:06:02.962 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53273&lt;-&gt;176.58.101.124:443 closed
+14:06:02.962 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53274&lt;-&gt;176.58.101.124:443 closed
+14:06:02.963 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53272&lt;-&gt;176.58.101.124:443 closed
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;felipa.daugherty&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:02.971 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:02.973 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:03.842 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:03.842 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:03.842 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:03.842 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:03.842 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:03.842 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 55[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 55
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:03.842 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:03.842 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;felipa.daugherty&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:05 GMT[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 90[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5a-zrh3fy+mrHPiVoS3KPIxEzvw2xA&quot;[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:04.003 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:05 GMT
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 90
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:04.004 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5a-zrh3fy+mrHPiVoS3KPIxEzvw2xA&quot;
+14:06:04.004 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:04.004 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:04.004 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:04.004 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;695324ef-d2eb-4b57-b51a-30048bfddb81&quot;,&quot;username&quot;:&quot;felipa.daugherty&quot;,&quot;books&quot;:[]}&quot;
+14:06:04.004 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@77005a1
+14:06:04.004 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 90
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5a-zrh3fy+mrHPiVoS3KPIxEzvw2xA&quot;
+
+{
+    &quot;userID&quot;: &quot;695324ef-d2eb-4b57-b51a-30048bfddb81&quot;,
+    &quot;username&quot;: &quot;felipa.daugherty&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/GenerateToken
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;felipa.daugherty&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:04.029 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:04.029 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:04.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:04.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:04.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:04.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:04.099 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:04.099 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 55[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/GenerateToken HTTP/1.1
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 55
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:04.099 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:04.100 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;felipa.daugherty&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:05 GMT[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 286[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11e-YQIbPrshAzHYDnjQi7gydCChM+4&quot;[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:05 GMT
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 286
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:04.427 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11e-YQIbPrshAzHYDnjQi7gydCChM+4&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:04.427 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:04.427 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:04.427 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZlbGlwYS5kYXVnaGVydHkiLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3NjV9.WGRN0VhyzREiVyO-EIqJI61rgkzenf9qnZkNEbyDT8I&quot;,&quot;expires&quot;:&quot;2023-12-20T13:06:05.399Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}&quot;
+14:06:04.427 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@118d0fae
+14:06:04.427 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:05 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 286
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11e-YQIbPrshAzHYDnjQi7gydCChM+4&quot;
+
+{
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZlbGlwYS5kYXVnaGVydHkiLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3NjV9.WGRN0VhyzREiVyO-EIqJI61rgkzenf9qnZkNEbyDT8I&quot;,
+    &quot;expires&quot;: &quot;2023-12-20T13:06:05.399Z&quot;,
+    &quot;status&quot;: &quot;Success&quot;,
+    &quot;result&quot;: &quot;User authorized successfully.&quot;
+}
+Request method:	GET
+Request URI:	https://demoqa.com/Account/v1/User/695324ef-d2eb-4b57-b51a-30048bfddb81
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	UserId=695324ef-d2eb-4b57-b51a-30048bfddb81
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZlbGlwYS5kYXVnaGVydHkiLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3NjV9.WGRN0VhyzREiVyO-EIqJI61rgkzenf9qnZkNEbyDT8I
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:04.445 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:04.445 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:04.801 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:04.801 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:04.801 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:04.801 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:04.802 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /Account/v1/User/695324ef-d2eb-4b57-b51a-30048bfddb81 HTTP/1.1
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /Account/v1/User/695324ef-d2eb-4b57-b51a-30048bfddb81 HTTP/1.1[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZlbGlwYS5kYXVnaGVydHkiLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3NjV9.WGRN0VhyzREiVyO-EIqJI61rgkzenf9qnZkNEbyDT8I[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /Account/v1/User/695324ef-d2eb-4b57-b51a-30048bfddb81 HTTP/1.1
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImZlbGlwYS5kYXVnaGVydHkiLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3NjV9.WGRN0VhyzREiVyO-EIqJI61rgkzenf9qnZkNEbyDT8I
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:04.802 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:06 GMT[\r][\n]&quot;
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 90[\r][\n]&quot;
+14:06:04.919 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5a-aREzyoH1uE0u0WlPhvANCeIQODk&quot;[\r][\n]&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:06 GMT
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 90
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:04.920 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5a-aREzyoH1uE0u0WlPhvANCeIQODk&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:04.920 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:04.920 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:04.920 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userId&quot;:&quot;695324ef-d2eb-4b57-b51a-30048bfddb81&quot;,&quot;username&quot;:&quot;felipa.daugherty&quot;,&quot;books&quot;:[]}&quot;
+14:06:04.920 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@70bc4941
+14:06:04.920 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 90
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5a-aREzyoH1uE0u0WlPhvANCeIQODk&quot;
+
+{
+    &quot;userId&quot;: &quot;695324ef-d2eb-4b57-b51a-30048bfddb81&quot;,
+    &quot;username&quot;: &quot;felipa.daugherty&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;leonarda.jaskolski&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:04.937 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:04.937 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:05.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:05.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:05.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:05.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:05.053 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:05.053 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 57[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 57
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:05.053 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:05.053 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;leonarda.jaskolski&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:06 GMT[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 92[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5c-a8XFpDUdU/HryuI3w1yMeUXXDUU&quot;[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:06 GMT
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 92
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:05.718 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5c-a8XFpDUdU/HryuI3w1yMeUXXDUU&quot;
+14:06:05.718 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:05.719 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:05.719 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:05.719 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;0c078bdc-b690-482d-9660-62d786f01bc6&quot;,&quot;username&quot;:&quot;leonarda.jaskolski&quot;,&quot;books&quot;:[]}&quot;
+14:06:05.719 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@730c7dfd
+14:06:05.719 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5c-a8XFpDUdU/HryuI3w1yMeUXXDUU&quot;
+
+{
+    &quot;userID&quot;: &quot;0c078bdc-b690-482d-9660-62d786f01bc6&quot;,
+    &quot;username&quot;: &quot;leonarda.jaskolski&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/GenerateToken
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;leonarda.jaskolski&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:05.733 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:05.733 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:06.063 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:06.064 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:06.064 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:06.064 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:06.064 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:06.064 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+14:06:06.064 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 57[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/GenerateToken HTTP/1.1
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 57
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:06.065 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:06.065 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;leonarda.jaskolski&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:06.421 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:07 GMT[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 289[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;121-UVWlHhvfIYgf20gBjjGsCQvaaoY&quot;[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:07 GMT
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 289
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:06.422 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;121-UVWlHhvfIYgf20gBjjGsCQvaaoY&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:06.422 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:06.422 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:06.422 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imxlb25hcmRhLmphc2tvbHNraSIsInBhc3N3b3JkIjoiMTIzUm9uMzIxJiIsImlhdCI6MTcwMjQ3Mjc2N30.WfztfHXuOoQaXI8buCO3zj-ezat1V9w24PkjEZbj8rI&quot;,&quot;expires&quot;:&quot;2023-12-20T13:06:07.363Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}&quot;
+14:06:06.422 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5b88b949
+14:06:06.422 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 289
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;121-UVWlHhvfIYgf20gBjjGsCQvaaoY&quot;
+
+{
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imxlb25hcmRhLmphc2tvbHNraSIsInBhc3N3b3JkIjoiMTIzUm9uMzIxJiIsImlhdCI6MTcwMjQ3Mjc2N30.WfztfHXuOoQaXI8buCO3zj-ezat1V9w24PkjEZbj8rI&quot;,
+    &quot;expires&quot;: &quot;2023-12-20T13:06:07.363Z&quot;,
+    &quot;status&quot;: &quot;Success&quot;,
+    &quot;result&quot;: &quot;User authorized successfully.&quot;
+}
+Request method:	GET
+Request URI:	https://demoqa.com/Account/v1/User/5642987
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	UserId=5642987
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imxlb25hcmRhLmphc2tvbHNraSIsInBhc3N3b3JkIjoiMTIzUm9uMzIxJiIsImlhdCI6MTcwMjQ3Mjc2N30.WfztfHXuOoQaXI8buCO3zj-ezat1V9w24PkjEZbj8rI
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:06.445 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:06.445 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:06.502 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:06.502 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:06.502 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:06.502 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:06.502 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /Account/v1/User/5642987 HTTP/1.1
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /Account/v1/User/5642987 HTTP/1.1[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imxlb25hcmRhLmphc2tvbHNraSIsInBhc3N3b3JkIjoiMTIzUm9uMzIxJiIsImlhdCI6MTcwMjQ3Mjc2N30.WfztfHXuOoQaXI8buCO3zj-ezat1V9w24PkjEZbj8rI[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /Account/v1/User/5642987 HTTP/1.1
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imxlb25hcmRhLmphc2tvbHNraSIsInBhc3N3b3JkIjoiMTIzUm9uMzIxJiIsImlhdCI6MTcwMjQ3Mjc2N30.WfztfHXuOoQaXI8buCO3zj-ezat1V9w24PkjEZbj8rI
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:06.502 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:07 GMT[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 43[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;2b-hLPYyb0m8IpHH/aFjmp8VZrYXGw&quot;[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 401 Unauthorized
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 401 Unauthorized
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:07 GMT
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 43
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:06.573 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;2b-hLPYyb0m8IpHH/aFjmp8VZrYXGw&quot;
+14:06:06.573 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:06.573 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Authentication required
+14:06:06.573 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- demoqa.com:443 requested authentication
+14:06:06.573 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Response contains no authentication challenges
+14:06:06.573 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:06.573 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:06.574 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;code&quot;:&quot;1207&quot;,&quot;message&quot;:&quot;User not found!&quot;}&quot;
+14:06:06.574 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@78436e2a
+14:06:06.574 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 43
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;2b-hLPYyb0m8IpHH/aFjmp8VZrYXGw&quot;
+
+{
+    &quot;code&quot;: &quot;1207&quot;,
+    &quot;message&quot;: &quot;User not found!&quot;
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;jeromy.considine&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:06.593 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:06.594 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:06.654 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:06.654 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:06.654 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:06.654 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:06.654 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:06.655 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 55[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 55
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:06.655 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:06.655 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;jeromy.considine&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:08 GMT[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 90[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5a-/+1bJaBeDOVhwln0NdxbOXQhcFs&quot;[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:08 GMT
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 90
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:06.815 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5a-/+1bJaBeDOVhwln0NdxbOXQhcFs&quot;
+14:06:06.815 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:06.815 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:06.815 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:06.816 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;acdf4050-ccb5-4e4e-8fe9-53a33ac3aa49&quot;,&quot;username&quot;:&quot;jeromy.considine&quot;,&quot;books&quot;:[]}&quot;
+14:06:06.816 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@50601a1e
+14:06:06.816 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 90
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5a-/+1bJaBeDOVhwln0NdxbOXQhcFs&quot;
+
+{
+    &quot;userID&quot;: &quot;acdf4050-ccb5-4e4e-8fe9-53a33ac3aa49&quot;,
+    &quot;username&quot;: &quot;jeromy.considine&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	GET
+Request URI:	https://demoqa.com/Account/v1/User/5642987
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	UserId=5642987
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:06.834 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:06.834 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:07.951 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:07.952 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:07.952 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:07.952 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:07.952 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:07.952 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /Account/v1/User/5642987 HTTP/1.1
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /Account/v1/User/5642987 HTTP/1.1[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /Account/v1/User/5642987 HTTP/1.1
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:07.952 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:09 GMT[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 48[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 401 Unauthorized
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 401 Unauthorized
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:09 GMT
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 48
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:07.978 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;
+14:06:07.978 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:07.978 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Authentication required
+14:06:07.978 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- demoqa.com:443 requested authentication
+14:06:07.978 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Response contains no authentication challenges
+14:06:07.978 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:07.978 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:07.979 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;code&quot;:&quot;1200&quot;,&quot;message&quot;:&quot;User not authorized!&quot;}&quot;
+14:06:07.979 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@44f35879
+14:06:07.979 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 48
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;
+
+{
+    &quot;code&quot;: &quot;1200&quot;,
+    &quot;message&quot;: &quot;User not authorized!&quot;
+}
+14:06:07.988 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53276&lt;-&gt;176.58.101.124:443 closed
+14:06:07.989 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53277&lt;-&gt;176.58.101.124:443 closed
+14:06:07.989 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53278&lt;-&gt;176.58.101.124:443 closed
+14:06:07.990 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53279&lt;-&gt;176.58.101.124:443 closed
+14:06:07.990 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53280&lt;-&gt;176.58.101.124:443 closed
+14:06:07.991 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53284&lt;-&gt;176.58.101.124:443 closed
+14:06:07.991 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53283&lt;-&gt;176.58.101.124:443 closed
+14:06:07.992 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53281&lt;-&gt;176.58.101.124:443 closed
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Dec 13, 2023, 2:06:20 PM</p>
+</div>
+</div>
+</body>
+</html>

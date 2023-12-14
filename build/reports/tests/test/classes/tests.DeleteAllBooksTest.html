@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.DeleteAllBooksTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.DeleteAllBooksTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; DeleteAllBooksTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.216s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="deleteAllBooksTest"></a>
+<h3 class="failures">deleteAllBooksTest</h3>
+<span class="code">
+<pre>java.lang.AssertionError: The response body is empty. did not expect [] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2198)
+	at tests.DeleteAllBooksTest.deleteAllBooksTest(DeleteAllBooksTest.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">deleteAllBooksTest</td>
+<td class="failures">4.715s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">deleteAllBooksTestWithoutToken</td>
+<td class="success">1.501s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:05:28.094 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53228&lt;-&gt;176.58.101.124:443 closed
+14:05:28.095 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53233&lt;-&gt;176.58.101.124:443 closed
+14:05:28.095 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53229&lt;-&gt;176.58.101.124:443 closed
+14:05:28.096 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53231&lt;-&gt;176.58.101.124:443 closed
+14:05:28.096 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53232&lt;-&gt;176.58.101.124:443 closed
+14:05:28.096 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53227&lt;-&gt;176.58.101.124:443 closed
+14:05:28.096 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53226&lt;-&gt;176.58.101.124:443 closed
+14:05:28.097 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53224&lt;-&gt;176.58.101.124:443 closed
+14:05:28.097 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53225&lt;-&gt;176.58.101.124:443 closed
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;elissa.hermiston&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:05:28.162 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:28.164 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:29.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:29.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:29.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:05:29.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:29.241 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:29.241 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 55[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 55
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:29.241 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:29.241 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;elissa.hermiston&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:30 GMT[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 90[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5a-/jVeMWwiqPJFuirTNVzICjczwfQ&quot;[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:29.433 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:30 GMT
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 90
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:29.433 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5a-/jVeMWwiqPJFuirTNVzICjczwfQ&quot;
+14:05:29.434 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:29.434 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:29.434 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:29.435 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;738d1183-8343-4077-9835-472109b13013&quot;,&quot;username&quot;:&quot;elissa.hermiston&quot;,&quot;books&quot;:[]}&quot;
+14:05:29.435 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@d036aad
+14:05:29.435 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 90
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5a-/jVeMWwiqPJFuirTNVzICjczwfQ&quot;
+
+{
+    &quot;userID&quot;: &quot;738d1183-8343-4077-9835-472109b13013&quot;,
+    &quot;username&quot;: &quot;elissa.hermiston&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/GenerateToken
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;elissa.hermiston&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:05:29.472 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:29.473 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:30.552 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:30.552 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:30.552 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:05:30.552 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:30.552 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:30.552 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 55[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/GenerateToken HTTP/1.1
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 55
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:30.552 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:30.552 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;elissa.hermiston&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:32 GMT[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 286[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11e-wxxheS2ZF9dZK8YeJzoSi/KWfng&quot;[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:32 GMT
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 286
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:30.974 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11e-wxxheS2ZF9dZK8YeJzoSi/KWfng&quot;
+14:05:30.974 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:30.974 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:30.974 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:30.975 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk&quot;,&quot;expires&quot;:&quot;2023-12-20T13:05:31.851Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}&quot;
+14:05:30.975 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7676963
+14:05:30.975 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 286
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11e-wxxheS2ZF9dZK8YeJzoSi/KWfng&quot;
+
+{
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk&quot;,
+    &quot;expires&quot;: &quot;2023-12-20T13:05:31.851Z&quot;,
+    &quot;status&quot;: &quot;Success&quot;,
+    &quot;result&quot;: &quot;User authorized successfully.&quot;
+}
+Request method:	GET
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:05:30.993 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:30.993 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:32.136 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:32.136 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:32.136 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:05:32.136 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:32.136 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:32.136 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /BookStore/v1/Books HTTP/1.1
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /BookStore/v1/Books HTTP/1.1
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:32.137 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:33 GMT[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 4514[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:33 GMT
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 4514
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:32.206 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+14:05:32.206 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:32.206 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:32.206 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:32.207 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer's Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients[0xe2][0x80][0x94]including browsers and mobile devices[0xe2][0x80][0x94]that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don't Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don[0xe2][0x80][0x99]t fully understand the language. As part of the \\\&quot;You Don[0xe2][0x80][0x99]t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}&quot;
+14:05:32.207 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@577cb38d
+14:05:32.207 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4514
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;,
+            &quot;title&quot;: &quot;Learning JavaScript Design Patterns&quot;,
+            &quot;subTitle&quot;: &quot;A JavaScript and jQuery Developer's Guide&quot;,
+            &quot;author&quot;: &quot;Addy Osmani&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:11:40.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,
+            &quot;website&quot;: &quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;,
+            &quot;title&quot;: &quot;Designing Evolvable Web APIs with ASP.NET&quot;,
+            &quot;subTitle&quot;: &quot;Harnessing the Power of the Web&quot;,
+            &quot;author&quot;: &quot;Glenn Block et al.&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:12:43.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 238,
+            &quot;description&quot;: &quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;,
+            &quot;title&quot;: &quot;Speaking JavaScript&quot;,
+            &quot;subTitle&quot;: &quot;An In-Depth Guide for Programmers&quot;,
+            &quot;author&quot;: &quot;Axel Rauschmayer&quot;,
+            &quot;publish_date&quot;: &quot;2014-02-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 460,
+            &quot;description&quot;: &quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,
+            &quot;website&quot;: &quot;http://speakingjs.com/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;,
+            &quot;title&quot;: &quot;You Don't Know JS&quot;,
+            &quot;subTitle&quot;: &quot;ES6 &amp; Beyond&quot;,
+            &quot;author&quot;: &quot;Kyle Simpson&quot;,
+            &quot;publish_date&quot;: &quot;2015-12-27T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 278,
+            &quot;description&quot;: &quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,
+            &quot;website&quot;: &quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;,
+            &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
+            &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
+            &quot;author&quot;: &quot;Eric Elliott&quot;,
+            &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593275846&quot;,
+            &quot;title&quot;: &quot;Eloquent JavaScript, Second Edition&quot;,
+            &quot;subTitle&quot;: &quot;A Modern Introduction to Programming&quot;,
+            &quot;author&quot;: &quot;Marijn Haverbeke&quot;,
+            &quot;publish_date&quot;: &quot;2014-12-14T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 472,
+            &quot;description&quot;: &quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,
+            &quot;website&quot;: &quot;http://eloquentjavascript.net/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593277574&quot;,
+            &quot;title&quot;: &quot;Understanding ECMAScript 6&quot;,
+            &quot;subTitle&quot;: &quot;The Definitive Guide for JavaScript Developers&quot;,
+            &quot;author&quot;: &quot;Nicholas C. Zakas&quot;,
+            &quot;publish_date&quot;: &quot;2016-09-03T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 352,
+            &quot;description&quot;: &quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,
+            &quot;website&quot;: &quot;https://leanpub.com/understandinges6/read&quot;
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userId&quot;: &quot;738d1183-8343-4077-9835-472109b13013&quot;,
+    &quot;collectionOfIsbns&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;
+        }
+    ]
+}
+14:05:32.290 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:32.291 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:32.364 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:32.364 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:32.364 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:32.364 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:32.364 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /BookStore/v1/Books HTTP/1.1
+14:05:32.364 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 221[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /BookStore/v1/Books HTTP/1.1
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 221
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:32.365 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:32.365 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userId&quot;:&quot;738d1183-8343-4077-9835-472109b13013&quot;,&quot;collectionOfIsbns&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;}]}&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:33 GMT[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 161[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:32.436 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:33 GMT
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 161
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:32.436 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;
+14:05:32.437 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:32.437 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:32.437 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:32.437 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;}]}&quot;
+14:05:32.437 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@30c23fcb
+14:05:32.437 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 161
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://demoqa.com/BookStore/v1/Books?UserId=738d1183-8343-4077-9835-472109b13013
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	UserId=738d1183-8343-4077-9835-472109b13013
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:05:32.492 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:32.492 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:32.579 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53234&lt;-&gt;176.58.101.124:443 closed
+14:05:32.580 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:32.580 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:32.580 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:32.580 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:32.580 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53235&lt;-&gt;176.58.101.124:443 closed
+14:05:32.580 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: DELETE /BookStore/v1/Books?UserId=738d1183-8343-4077-9835-472109b13013 HTTP/1.1
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;DELETE /BookStore/v1/Books?UserId=738d1183-8343-4077-9835-472109b13013 HTTP/1.1[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:32.580 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:32.581 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; DELETE /BookStore/v1/Books?UserId=738d1183-8343-4077-9835-472109b13013 HTTP/1.1
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImVsaXNzYS5oZXJtaXN0b24iLCJwYXNzd29yZCI6IjEyM1JvbjMyMSYiLCJpYXQiOjE3MDI0NzI3MzF9.MXljWRCI37LkG0qg2FMp_3trWGn7opNqs1944Vz5iWk
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:32.581 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:32.581 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53237&lt;-&gt;176.58.101.124:443 closed
+14:05:32.582 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53238&lt;-&gt;176.58.101.124:443 closed
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 204 No Content[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:34 GMT[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;60-fo1BmirJUHT6a1za44qlnfq6mhA&quot;[\r][\n]&quot;
+14:05:32.762 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:32.763 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 204 No Content
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 204 No Content
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:34 GMT
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:32.763 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;60-fo1BmirJUHT6a1za44qlnfq6mhA&quot;
+14:05:32.763 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:32.763 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@df9940b
+14:05:32.763 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 204 No Content
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:34 GMT
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;60-fo1BmirJUHT6a1za44qlnfq6mhA&quot;
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;eliseo.gerhold&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:05:32.825 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:32.825 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:32.958 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:32.958 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:32.958 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:05:32.958 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:32.958 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:32.958 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 53[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 53
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:32.958 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:32.958 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;eliseo.gerhold&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:34 GMT[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 88[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;58-NEpR9WtL+xMRahYv30xcUqdlIXc&quot;[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:34 GMT
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 88
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:33.160 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;58-NEpR9WtL+xMRahYv30xcUqdlIXc&quot;
+14:05:33.160 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:33.160 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:33.160 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:33.161 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;c1ea6a44-cd49-4b4f-a426-e35283c6d17e&quot;,&quot;username&quot;:&quot;eliseo.gerhold&quot;,&quot;books&quot;:[]}&quot;
+14:05:33.161 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@497cff3b
+14:05:33.161 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:34 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 88
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;58-NEpR9WtL+xMRahYv30xcUqdlIXc&quot;
+
+{
+    &quot;userID&quot;: &quot;c1ea6a44-cd49-4b4f-a426-e35283c6d17e&quot;,
+    &quot;username&quot;: &quot;eliseo.gerhold&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+14:05:33.177 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53241&lt;-&gt;176.58.101.124:443 closed
+Request method:	DELETE
+Request URI:	https://demoqa.com/BookStore/v1/Books?UserId=c1ea6a44-cd49-4b4f-a426-e35283c6d17e
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	UserId=c1ea6a44-cd49-4b4f-a426-e35283c6d17e
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:05:33.187 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:05:33.188 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:05:34.270 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:05:34.270 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:05:34.270 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:05:34.270 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:05:34.270 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:05:34.270 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: DELETE /BookStore/v1/Books?UserId=c1ea6a44-cd49-4b4f-a426-e35283c6d17e HTTP/1.1
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;DELETE /BookStore/v1/Books?UserId=c1ea6a44-cd49-4b4f-a426-e35283c6d17e HTTP/1.1[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; DELETE /BookStore/v1/Books?UserId=c1ea6a44-cd49-4b4f-a426-e35283c6d17e HTTP/1.1
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:05:34.270 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:05:34.298 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:05:35 GMT[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 48[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 401 Unauthorized
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 401 Unauthorized
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:05:35 GMT
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 48
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:05:34.299 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Authentication required
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- demoqa.com:443 requested authentication
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Response contains no authentication challenges
+14:05:34.299 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:05:34.299 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:05:34.299 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;code&quot;:&quot;1200&quot;,&quot;message&quot;:&quot;User not authorized!&quot;}&quot;
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@64209d58
+14:05:34.299 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 401 Unauthorized
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:05:35 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 48
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;30-V67npMN18Zy3bnk1xW2xtLGgx8c&quot;
+
+{
+    &quot;code&quot;: &quot;1200&quot;,
+    &quot;message&quot;: &quot;User not authorized!&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Dec 13, 2023, 2:06:20 PM</p>
+</div>
+</div>
+</body>
+</html>

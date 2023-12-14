@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.ReplaceIsbnTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.ReplaceIsbnTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; ReplaceIsbnTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.859s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">replaceIsbn</td>
+<td class="success">10.859s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/User
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;leana.schamberger&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:09.237 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:09.238 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:09.312 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:09.312 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:09.312 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:09.312 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:09.312 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:09.312 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/User HTTP/1.1[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 56[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/User HTTP/1.1
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 56
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:09.312 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:09.312 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;leana.schamberger&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:10 GMT[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 91[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;5b-drOwIYjNr3SVb6JqbRAF6DKvuhY&quot;[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:10 GMT
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 91
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:09.499 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;5b-drOwIYjNr3SVb6JqbRAF6DKvuhY&quot;
+14:06:09.499 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:09.499 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:09.499 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:09.500 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userID&quot;:&quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,&quot;username&quot;:&quot;leana.schamberger&quot;,&quot;books&quot;:[]}&quot;
+14:06:09.500 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2d18ed78
+14:06:09.500 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 91
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;5b-drOwIYjNr3SVb6JqbRAF6DKvuhY&quot;
+
+{
+    &quot;userID&quot;: &quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,
+    &quot;username&quot;: &quot;leana.schamberger&quot;,
+    &quot;books&quot;: [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/Account/v1/GenerateToken
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userName&quot;: &quot;leana.schamberger&quot;,
+    &quot;password&quot;: &quot;123Ron321&amp;&quot;
+}
+14:06:09.515 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:09.515 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:09.588 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:09.588 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:09.588 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:09.589 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:09.589 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:09.589 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/GenerateToken HTTP/1.1
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /Account/v1/GenerateToken HTTP/1.1[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 56[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /Account/v1/GenerateToken HTTP/1.1
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 56
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:09.589 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:09.589 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userName&quot;:&quot;leana.schamberger&quot;,&quot;password&quot;:&quot;123Ron321&amp;&quot;}&quot;
+14:06:09.912 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:11 GMT[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 288[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;120-7FGgNVgpYHoYWsffVo4Loi3CxHY&quot;[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:11 GMT
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 288
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:09.913 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;120-7FGgNVgpYHoYWsffVo4Loi3CxHY&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:09.913 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:09.913 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:09.913 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A&quot;,&quot;expires&quot;:&quot;2023-12-20T13:06:10.888Z&quot;,&quot;status&quot;:&quot;Success&quot;,&quot;result&quot;:&quot;User authorized successfully.&quot;}&quot;
+14:06:09.913 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@336a7a2f
+14:06:09.913 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 288
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;120-7FGgNVgpYHoYWsffVo4Loi3CxHY&quot;
+
+{
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A&quot;,
+    &quot;expires&quot;: &quot;2023-12-20T13:06:10.888Z&quot;,
+    &quot;status&quot;: &quot;Success&quot;,
+    &quot;result&quot;: &quot;User authorized successfully.&quot;
+}
+Request method:	GET
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:09.927 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:09.927 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:10.062 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:10.062 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:10.062 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:10.062 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:10.062 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:10.062 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /BookStore/v1/Books HTTP/1.1
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /BookStore/v1/Books HTTP/1.1
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:10.062 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:11 GMT[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 4514[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:11 GMT
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 4514
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:10.944 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+14:06:10.944 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:10.944 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:10.944 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:10.945 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer's Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients[0xe2][0x80][0x94]including browsers and mobile devices[0xe2][0x80][0x94]that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don't Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don[0xe2][0x80][0x99]t fully understand the language. As part of the \\\&quot;You Don[0xe2][0x80][0x99]t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}&quot;
+14:06:10.945 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@79312bfe
+14:06:10.945 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4514
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;,
+            &quot;title&quot;: &quot;Learning JavaScript Design Patterns&quot;,
+            &quot;subTitle&quot;: &quot;A JavaScript and jQuery Developer's Guide&quot;,
+            &quot;author&quot;: &quot;Addy Osmani&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:11:40.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,
+            &quot;website&quot;: &quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;,
+            &quot;title&quot;: &quot;Designing Evolvable Web APIs with ASP.NET&quot;,
+            &quot;subTitle&quot;: &quot;Harnessing the Power of the Web&quot;,
+            &quot;author&quot;: &quot;Glenn Block et al.&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:12:43.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 238,
+            &quot;description&quot;: &quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;,
+            &quot;title&quot;: &quot;Speaking JavaScript&quot;,
+            &quot;subTitle&quot;: &quot;An In-Depth Guide for Programmers&quot;,
+            &quot;author&quot;: &quot;Axel Rauschmayer&quot;,
+            &quot;publish_date&quot;: &quot;2014-02-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 460,
+            &quot;description&quot;: &quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,
+            &quot;website&quot;: &quot;http://speakingjs.com/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;,
+            &quot;title&quot;: &quot;You Don't Know JS&quot;,
+            &quot;subTitle&quot;: &quot;ES6 &amp; Beyond&quot;,
+            &quot;author&quot;: &quot;Kyle Simpson&quot;,
+            &quot;publish_date&quot;: &quot;2015-12-27T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 278,
+            &quot;description&quot;: &quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,
+            &quot;website&quot;: &quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;,
+            &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
+            &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
+            &quot;author&quot;: &quot;Eric Elliott&quot;,
+            &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593275846&quot;,
+            &quot;title&quot;: &quot;Eloquent JavaScript, Second Edition&quot;,
+            &quot;subTitle&quot;: &quot;A Modern Introduction to Programming&quot;,
+            &quot;author&quot;: &quot;Marijn Haverbeke&quot;,
+            &quot;publish_date&quot;: &quot;2014-12-14T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 472,
+            &quot;description&quot;: &quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,
+            &quot;website&quot;: &quot;http://eloquentjavascript.net/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593277574&quot;,
+            &quot;title&quot;: &quot;Understanding ECMAScript 6&quot;,
+            &quot;subTitle&quot;: &quot;The Definitive Guide for JavaScript Developers&quot;,
+            &quot;author&quot;: &quot;Nicholas C. Zakas&quot;,
+            &quot;publish_date&quot;: &quot;2016-09-03T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 352,
+            &quot;description&quot;: &quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,
+            &quot;website&quot;: &quot;https://leanpub.com/understandinges6/read&quot;
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userId&quot;: &quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,
+    &quot;collectionOfIsbns&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;
+        }
+    ]
+}
+14:06:10.975 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:10.975 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:11.030 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:11.030 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:11.030 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:11.030 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:11.030 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /BookStore/v1/Books HTTP/1.1
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;POST /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 221[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; POST /BookStore/v1/Books HTTP/1.1
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 221
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:11.030 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:11.030 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userId&quot;:&quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,&quot;collectionOfIsbns&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;}]}&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 201 Created[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:12 GMT[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 161[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 201 Created
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 201 Created
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:12 GMT
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 161
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:11.592 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;
+14:06:11.592 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:11.592 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:11.592 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:11.593 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;}]}&quot;
+14:06:11.593 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@465689d6
+14:06:11.593 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 201 Created
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 161
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;a1-XMsZ5dLxDfuj7yADwdLwIqQjZ2Q&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:11.615 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:11.616 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:12.764 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:12.764 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:12.764 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:12.764 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:12.764 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:12.764 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /BookStore/v1/Books HTTP/1.1
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /BookStore/v1/Books HTTP/1.1
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:12.764 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:14 GMT[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 4514[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:14 GMT
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 4514
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:13.571 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+14:06:13.571 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:13.572 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:13.572 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:13.572 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer's Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients[0xe2][0x80][0x94]including browsers and mobile devices[0xe2][0x80][0x94]that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don't Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don[0xe2][0x80][0x99]t fully understand the language. As part of the \\\&quot;You Don[0xe2][0x80][0x99]t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}&quot;
+14:06:13.572 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7bac1135
+14:06:13.572 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4514
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;,
+            &quot;title&quot;: &quot;Learning JavaScript Design Patterns&quot;,
+            &quot;subTitle&quot;: &quot;A JavaScript and jQuery Developer's Guide&quot;,
+            &quot;author&quot;: &quot;Addy Osmani&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:11:40.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,
+            &quot;website&quot;: &quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;,
+            &quot;title&quot;: &quot;Designing Evolvable Web APIs with ASP.NET&quot;,
+            &quot;subTitle&quot;: &quot;Harnessing the Power of the Web&quot;,
+            &quot;author&quot;: &quot;Glenn Block et al.&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:12:43.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 238,
+            &quot;description&quot;: &quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;,
+            &quot;title&quot;: &quot;Speaking JavaScript&quot;,
+            &quot;subTitle&quot;: &quot;An In-Depth Guide for Programmers&quot;,
+            &quot;author&quot;: &quot;Axel Rauschmayer&quot;,
+            &quot;publish_date&quot;: &quot;2014-02-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 460,
+            &quot;description&quot;: &quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,
+            &quot;website&quot;: &quot;http://speakingjs.com/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;,
+            &quot;title&quot;: &quot;You Don't Know JS&quot;,
+            &quot;subTitle&quot;: &quot;ES6 &amp; Beyond&quot;,
+            &quot;author&quot;: &quot;Kyle Simpson&quot;,
+            &quot;publish_date&quot;: &quot;2015-12-27T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 278,
+            &quot;description&quot;: &quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,
+            &quot;website&quot;: &quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;,
+            &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
+            &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
+            &quot;author&quot;: &quot;Eric Elliott&quot;,
+            &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593275846&quot;,
+            &quot;title&quot;: &quot;Eloquent JavaScript, Second Edition&quot;,
+            &quot;subTitle&quot;: &quot;A Modern Introduction to Programming&quot;,
+            &quot;author&quot;: &quot;Marijn Haverbeke&quot;,
+            &quot;publish_date&quot;: &quot;2014-12-14T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 472,
+            &quot;description&quot;: &quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,
+            &quot;website&quot;: &quot;http://eloquentjavascript.net/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593277574&quot;,
+            &quot;title&quot;: &quot;Understanding ECMAScript 6&quot;,
+            &quot;subTitle&quot;: &quot;The Definitive Guide for JavaScript Developers&quot;,
+            &quot;author&quot;: &quot;Nicholas C. Zakas&quot;,
+            &quot;publish_date&quot;: &quot;2016-09-03T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 352,
+            &quot;description&quot;: &quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,
+            &quot;website&quot;: &quot;https://leanpub.com/understandinges6/read&quot;
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:13.641 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:13.641 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:16.077 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:16.077 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:16.077 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+14:06:16.077 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:16.077 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:16.077 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: GET /BookStore/v1/Books HTTP/1.1
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;GET /BookStore/v1/Books HTTP/1.1[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; GET /BookStore/v1/Books HTTP/1.1
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:16.077 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:17 GMT[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 4514[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:16.267 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:17 GMT
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 4514
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:16.267 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+14:06:16.268 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:16.268 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:16.268 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:16.268 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449331818&quot;,&quot;title&quot;:&quot;Learning JavaScript Design Patterns&quot;,&quot;subTitle&quot;:&quot;A JavaScript and jQuery Developer's Guide&quot;,&quot;author&quot;:&quot;Addy Osmani&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:11:40.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,&quot;website&quot;:&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients[0xe2][0x80][0x94]including browsers and mobile devices[0xe2][0x80][0x94]that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don't Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don[0xe2][0x80][0x99]t fully understand the language. As part of the \\\&quot;You Don[0xe2][0x80][0x99]t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781593275846&quot;,&quot;title&quot;:&quot;Eloquent JavaScript, Second Edition&quot;,&quot;subTitle&quot;:&quot;A Modern Introduction to Programming&quot;,&quot;author&quot;:&quot;Marijn Haverbeke&quot;,&quot;publish_date&quot;:&quot;2014-12-14T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:472,&quot;description&quot;:&quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,&quot;website&quot;:&quot;http://eloquentjavascript.net/&quot;},{&quot;isbn&quot;:&quot;9781593277574&quot;,&quot;title&quot;:&quot;Understanding ECMAScript 6&quot;,&quot;subTitle&quot;:&quot;The Definitive Guide for JavaScript Developers&quot;,&quot;author&quot;:&quot;Nicholas C. Zakas&quot;,&quot;publish_date&quot;:&quot;2016-09-03T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;No Starch Press&quot;,&quot;pages&quot;:352,&quot;description&quot;:&quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,&quot;website&quot;:&quot;https://leanpub.com/understandinges6/read&quot;}]}&quot;
+14:06:16.268 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@30164c73
+14:06:16.268 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4514
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;11a2-8zfX++QwcgaCjSU6F8JP9fUd1tY&quot;
+
+{
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449331818&quot;,
+            &quot;title&quot;: &quot;Learning JavaScript Design Patterns&quot;,
+            &quot;subTitle&quot;: &quot;A JavaScript and jQuery Developer's Guide&quot;,
+            &quot;author&quot;: &quot;Addy Osmani&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:11:40.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da&quot;,
+            &quot;website&quot;: &quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;,
+            &quot;title&quot;: &quot;Designing Evolvable Web APIs with ASP.NET&quot;,
+            &quot;subTitle&quot;: &quot;Harnessing the Power of the Web&quot;,
+            &quot;author&quot;: &quot;Glenn Block et al.&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:12:43.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 238,
+            &quot;description&quot;: &quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;,
+            &quot;title&quot;: &quot;Speaking JavaScript&quot;,
+            &quot;subTitle&quot;: &quot;An In-Depth Guide for Programmers&quot;,
+            &quot;author&quot;: &quot;Axel Rauschmayer&quot;,
+            &quot;publish_date&quot;: &quot;2014-02-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 460,
+            &quot;description&quot;: &quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,
+            &quot;website&quot;: &quot;http://speakingjs.com/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;,
+            &quot;title&quot;: &quot;You Don't Know JS&quot;,
+            &quot;subTitle&quot;: &quot;ES6 &amp; Beyond&quot;,
+            &quot;author&quot;: &quot;Kyle Simpson&quot;,
+            &quot;publish_date&quot;: &quot;2015-12-27T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 278,
+            &quot;description&quot;: &quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,
+            &quot;website&quot;: &quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;,
+            &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
+            &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
+            &quot;author&quot;: &quot;Eric Elliott&quot;,
+            &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593275846&quot;,
+            &quot;title&quot;: &quot;Eloquent JavaScript, Second Edition&quot;,
+            &quot;subTitle&quot;: &quot;A Modern Introduction to Programming&quot;,
+            &quot;author&quot;: &quot;Marijn Haverbeke&quot;,
+            &quot;publish_date&quot;: &quot;2014-12-14T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 472,
+            &quot;description&quot;: &quot;JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale &quot;,
+            &quot;website&quot;: &quot;http://eloquentjavascript.net/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781593277574&quot;,
+            &quot;title&quot;: &quot;Understanding ECMAScript 6&quot;,
+            &quot;subTitle&quot;: &quot;The Definitive Guide for JavaScript Developers&quot;,
+            &quot;author&quot;: &quot;Nicholas C. Zakas&quot;,
+            &quot;publish_date&quot;: &quot;2016-09-03T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;No Starch Press&quot;,
+            &quot;pages&quot;: 352,
+            &quot;description&quot;: &quot;ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that E&quot;,
+            &quot;website&quot;: &quot;https://leanpub.com/understandinges6/read&quot;
+        }
+    ]
+}
+14:06:16.285 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53286&lt;-&gt;176.58.101.124:443 closed
+14:06:16.286 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53287&lt;-&gt;176.58.101.124:443 closed
+14:06:16.286 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53289&lt;-&gt;176.58.101.124:443 closed
+14:06:16.287 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53292&lt;-&gt;176.58.101.124:443 closed
+14:06:16.287 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53288&lt;-&gt;176.58.101.124:443 closed
+14:06:16.287 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Connection 0.0.0.0:53290&lt;-&gt;176.58.101.124:443 closed
+Request method:	PUT
+Request URI:	https://demoqa.com/BookStore/v1/Books/9781449331818
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	ISBN=9781449331818
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;userId&quot;: &quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,
+    &quot;isbn&quot;: &quot;9781449325862&quot;
+}
+14:06:16.307 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:16.307 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:16.372 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:16.372 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:16.372 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:16.372 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:16.372 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: PUT /BookStore/v1/Books/9781449331818 HTTP/1.1
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;PUT /BookStore/v1/Books/9781449331818 HTTP/1.1[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Length: 72[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; PUT /BookStore/v1/Books/9781449331818 HTTP/1.1
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Length: 72
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:16.372 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:16.372 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;{&quot;userId&quot;:&quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,&quot;isbn&quot;:&quot;9781449325862&quot;}&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:17 GMT[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Content-Length: 3450[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;d7a-Mr4iZEPTFi/Kip3Lh/rMK7K0bSA&quot;[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 200 OK
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 200 OK
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:17 GMT
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Type: application/json; charset=utf-8
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Content-Length: 3450
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:16.608 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;d7a-Mr4iZEPTFi/Kip3Lh/rMK7K0bSA&quot;
+14:06:16.608 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:16.608 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: application/json; charset=utf-8
+14:06:16.608 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:06:16.609 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;{&quot;userId&quot;:&quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,&quot;username&quot;:&quot;leana.schamberger&quot;,&quot;books&quot;:[{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;},{&quot;isbn&quot;:&quot;9781449337711&quot;,&quot;title&quot;:&quot;Designing Evolvable Web APIs with ASP.NET&quot;,&quot;subTitle&quot;:&quot;Harnessing the Power of the Web&quot;,&quot;author&quot;:&quot;Glenn Block et al.&quot;,&quot;publish_date&quot;:&quot;2020-06-04T09:12:43.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:238,&quot;description&quot;:&quot;Design and build Web APIs for a broad range of clients[0xe2][0x80][0x94]including browsers and mobile devices[0xe2][0x80][0x94]that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;},{&quot;isbn&quot;:&quot;9781449365035&quot;,&quot;title&quot;:&quot;Speaking JavaScript&quot;,&quot;subTitle&quot;:&quot;An In-Depth Guide for Programmers&quot;,&quot;author&quot;:&quot;Axel Rauschmayer&quot;,&quot;publish_date&quot;:&quot;2014-02-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:460,&quot;description&quot;:&quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,&quot;website&quot;:&quot;http://speakingjs.com/&quot;},{&quot;isbn&quot;:&quot;9781491904244&quot;,&quot;title&quot;:&quot;You Don't Know JS&quot;,&quot;subTitle&quot;:&quot;ES6 &amp; Beyond&quot;,&quot;author&quot;:&quot;Kyle Simpson&quot;,&quot;publish_date&quot;:&quot;2015-12-27T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:278,&quot;description&quot;:&quot;No matter how much experience you have with JavaScript, odds are you don[0xe2][0x80][0x99]t fully understand the language. As part of the \\\&quot;You Don[0xe2][0x80][0x99]t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,&quot;website&quot;:&quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;},{&quot;isbn&quot;:&quot;9781491950296&quot;,&quot;title&quot;:&quot;Programming JavaScript Applications&quot;,&quot;subTitle&quot;:&quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,&quot;author&quot;:&quot;Eric Elliott&quot;,&quot;publish_date&quot;:&quot;2014-07-01T00:00:00.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:254,&quot;description&quot;:&quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;},{&quot;isbn&quot;:&quot;9781449325862&quot;,&quot;title&quot;:&quot;Git Pocket Guide&quot;,&quot;subTitle&quot;:&quot;A Working Introduction&quot;,&quot;author&quot;:&quot;Richard E. Silverman&quot;,&quot;publish_date&quot;:&quot;2020-06-04T08:48:39.000Z&quot;,&quot;publisher&quot;:&quot;O'Reilly Media&quot;,&quot;pages&quot;:234,&quot;description&quot;:&quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,&quot;website&quot;:&quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;}]}&quot;
+14:06:16.609 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@62399879
+14:06:16.609 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:17 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 3450
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;d7a-Mr4iZEPTFi/Kip3Lh/rMK7K0bSA&quot;
+
+{
+    &quot;userId&quot;: &quot;bd9f2e22-d4b1-4292-85b6-f42f6192258b&quot;,
+    &quot;username&quot;: &quot;leana.schamberger&quot;,
+    &quot;books&quot;: [
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449337711&quot;,
+            &quot;title&quot;: &quot;Designing Evolvable Web APIs with ASP.NET&quot;,
+            &quot;subTitle&quot;: &quot;Harnessing the Power of the Web&quot;,
+            &quot;author&quot;: &quot;Glenn Block et al.&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T09:12:43.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 238,
+            &quot;description&quot;: &quot;Design and build Web APIs for a broad range of clients—including browsers and mobile devices—that can adapt to change over time. This practical, hands-on guide takes you through the theory and tools you need to build evolvable HTTP services with Microsoft&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000001708/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449365035&quot;,
+            &quot;title&quot;: &quot;Speaking JavaScript&quot;,
+            &quot;subTitle&quot;: &quot;An In-Depth Guide for Programmers&quot;,
+            &quot;author&quot;: &quot;Axel Rauschmayer&quot;,
+            &quot;publish_date&quot;: &quot;2014-02-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 460,
+            &quot;description&quot;: &quot;Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o&quot;,
+            &quot;website&quot;: &quot;http://speakingjs.com/&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491904244&quot;,
+            &quot;title&quot;: &quot;You Don't Know JS&quot;,
+            &quot;subTitle&quot;: &quot;ES6 &amp; Beyond&quot;,
+            &quot;author&quot;: &quot;Kyle Simpson&quot;,
+            &quot;publish_date&quot;: &quot;2015-12-27T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 278,
+            &quot;description&quot;: &quot;No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the \\\&quot;You Don’t Know JS\\\&quot; series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the st&quot;,
+            &quot;website&quot;: &quot;https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&amp;%20beyond&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781491950296&quot;,
+            &quot;title&quot;: &quot;Programming JavaScript Applications&quot;,
+            &quot;subTitle&quot;: &quot;Robust Web Architecture with Node, HTML5, and Modern JS Libraries&quot;,
+            &quot;author&quot;: &quot;Eric Elliott&quot;,
+            &quot;publish_date&quot;: &quot;2014-07-01T00:00:00.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 254,
+            &quot;description&quot;: &quot;Take advantage of JavaScript's power to build robust web-scale or enterprise applications that are easy to extend and maintain. By applying the design patterns outlined in this practical book, experienced JavaScript developers will learn how to write flex&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1234000000262/index.html&quot;
+        },
+        {
+            &quot;isbn&quot;: &quot;9781449325862&quot;,
+            &quot;title&quot;: &quot;Git Pocket Guide&quot;,
+            &quot;subTitle&quot;: &quot;A Working Introduction&quot;,
+            &quot;author&quot;: &quot;Richard E. Silverman&quot;,
+            &quot;publish_date&quot;: &quot;2020-06-04T08:48:39.000Z&quot;,
+            &quot;publisher&quot;: &quot;O'Reilly Media&quot;,
+            &quot;pages&quot;: 234,
+            &quot;description&quot;: &quot;This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp&quot;,
+            &quot;website&quot;: &quot;http://chimera.labs.oreilly.com/books/1230000000561/index.html&quot;
+        }
+    ]
+}
+Request method:	DELETE
+Request URI:	https://demoqa.com/BookStore/v1/Books?UserId=bd9f2e22-d4b1-4292-85b6-f42f6192258b
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	UserId=bd9f2e22-d4b1-4292-85b6-f42f6192258b
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+14:06:16.618 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {s}-&gt;https://demoqa.com:443
+14:06:16.618 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:443
+14:06:19.746 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+14:06:19.747 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+14:06:19.747 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+14:06:19.747 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+14:06:19.747 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: DELETE /BookStore/v1/Books?UserId=bd9f2e22-d4b1-4292-85b6-f42f6192258b HTTP/1.1
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;DELETE /BookStore/v1/Books?UserId=bd9f2e22-d4b1-4292-85b6-f42f6192258b HTTP/1.1[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Host: demoqa.com[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.wire --  &gt;&gt; &quot;[\r][\n]&quot;
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; DELETE /BookStore/v1/Books?UserId=bd9f2e22-d4b1-4292-85b6-f42f6192258b HTTP/1.1
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Content-Type: application/json
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImxlYW5hLnNjaGFtYmVyZ2VyIiwicGFzc3dvcmQiOiIxMjNSb24zMjEmIiwiaWF0IjoxNzAyNDcyNzcwfQ.33ERmrR_cIAVfHa88I1quIy8cH0WHgXWl0nY2C2513A
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept: */*
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Host: demoqa.com
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Connection: Keep-Alive
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+14:06:19.747 [Test worker] DEBUG org.apache.http.headers -- &gt;&gt; Accept-Encoding: gzip,deflate
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;HTTP/1.1 204 No Content[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Server: nginx/1.17.10 (Ubuntu)[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Date: Wed, 13 Dec 2023 13:06:21 GMT[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;ETag: W/&quot;60-4ErwBgI+1VOlSJ2nrdSjBlQNNMg&quot;[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.wire --  &lt;&lt; &quot;[\r][\n]&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 204 No Content
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; HTTP/1.1 204 No Content
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Server: nginx/1.17.10 (Ubuntu)
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Date: Wed, 13 Dec 2023 13:06:21 GMT
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; Connection: keep-alive
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; X-Powered-By: Express
+14:06:20.090 [Test worker] DEBUG org.apache.http.headers -- &lt;&lt; ETag: W/&quot;60-4ErwBgI+1VOlSJ2nrdSjBlQNNMg&quot;
+14:06:20.090 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+14:06:20.090 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2f944222
+14:06:20.090 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 204 No Content
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 13 Dec 2023 13:06:21 GMT
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/&quot;60-4ErwBgI+1VOlSJ2nrdSjBlQNNMg&quot;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Dec 13, 2023, 2:06:20 PM</p>
+</div>
+</div>
+</body>
+</html>
